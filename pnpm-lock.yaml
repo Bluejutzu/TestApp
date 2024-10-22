@@ -12,8 +12,8 @@ importers:
         specifier: ^2.9.0
         version: 2.9.0(eslint@9.12.0)(typescript@5.6.3)
       '@typescript-eslint/scope-manager':
-        specifier: 8.9.0
-        version: 8.9.0
+        specifier: 8.11.0
+        version: 8.11.0
       electron-squirrel-startup:
         specifier: ^1.0.1
         version: 1.0.1
@@ -481,6 +481,10 @@ packages:
       typescript:
         optional: true
 
+  '@typescript-eslint/scope-manager@8.11.0':
+    resolution: {integrity: sha512-Uholz7tWhXmA4r6epo+vaeV7yjdKy5QFCERMjs1kMVsLRKIrSdM6o21W2He9ftp5PP6aWOVpD5zvrvuHZC0bMQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@typescript-eslint/scope-manager@8.8.1':
     resolution: {integrity: sha512-X4JdU+66Mazev/J0gfXlcC/dV6JI37h+93W9BRYXrSn0hrE64IoWgVkO9MSJgEzoWkxONgaQpICWg8vAN74wlA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -497,6 +501,10 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  '@typescript-eslint/types@8.11.0':
+    resolution: {integrity: sha512-tn6sNMHf6EBAYMvmPUaKaVeYvhUsrE6x+bXQTxjQRp360h1giATU0WvgeEys1spbvb5R+VpNOZ+XJmjD8wOUHw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/types@8.8.1':
     resolution: {integrity: sha512-WCcTP4SDXzMd23N27u66zTKMuEevH4uzU8C9jf0RO4E04yVHgQgW+r+TeVTNnO1KIfrL8ebgVVYYMMO3+jC55Q==}
@@ -535,6 +543,10 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
+
+  '@typescript-eslint/visitor-keys@8.11.0':
+    resolution: {integrity: sha512-EaewX6lxSjRJnc+99+dqzTeoDZUfyrA52d2/HRrkI830kgovWsmIiTfmr0NZorzqic7ga+1bS60lRBUgR3n/Bw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/visitor-keys@8.8.1':
     resolution: {integrity: sha512-0/TdC3aeRAsW7MDvYRwEc1Uwm0TIBfzjPFgg60UU2Haj5qsCs9cc3zNgY71edqE3LbWfF/WoZQd3lJoDXFQpag==}
@@ -715,6 +727,7 @@ packages:
 
   boolean@3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   bottleneck@2.19.5:
     resolution: {integrity: sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw==}
@@ -3496,6 +3509,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/scope-manager@8.11.0':
+    dependencies:
+      '@typescript-eslint/types': 8.11.0
+      '@typescript-eslint/visitor-keys': 8.11.0
+
   '@typescript-eslint/scope-manager@8.8.1':
     dependencies:
       '@typescript-eslint/types': 8.8.1
@@ -3517,6 +3535,8 @@ snapshots:
     transitivePeerDependencies:
       - eslint
       - supports-color
+
+  '@typescript-eslint/types@8.11.0': {}
 
   '@typescript-eslint/types@8.8.1': {}
 
@@ -3573,6 +3593,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@typescript-eslint/visitor-keys@8.11.0':
+    dependencies:
+      '@typescript-eslint/types': 8.11.0
+      eslint-visitor-keys: 3.4.3
 
   '@typescript-eslint/visitor-keys@8.8.1':
     dependencies:
