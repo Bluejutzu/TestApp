@@ -31,10 +31,6 @@
     "repository": "https://github.com/Bluejutzu/TestApp",
     "keywords": [
         "Electron",
-        "quick",
-        "start",
-        "tutorial",
-        "demo",
         "typescript"
     ],
     "packageManager": "pnpm@9.1.0",
