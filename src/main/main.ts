@@ -9,7 +9,7 @@ function createWindow() {
         },
         width: 800
     });
-    mainWindow.loadFile(path.join(__dirname, "../static/index.js"));
+    mainWindow.loadFile(path.join("./index.html"));
 }
 
 app.whenReady().then(() => {
