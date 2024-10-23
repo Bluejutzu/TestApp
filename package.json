@@ -1,6 +1,6 @@
 {
     "name": "electron-quick-start-typescript",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "A minimal Electron application written with Typescript",
     "license": "CC0-1.0",
     "author": "Bluejutzu",
