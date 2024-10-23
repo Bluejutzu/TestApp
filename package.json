@@ -28,7 +28,7 @@
         "test": "pnpm lint && pnpm testTypes",
         "testTypes": "tsc --noEmit"
     },
-    "repository": "https://github.com/electron/electron-quick-start-typescript",
+    "repository": "https://github.com/Bluejutzu/TestApp",
     "keywords": [
         "Electron",
         "quick",
