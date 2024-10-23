@@ -12,6 +12,7 @@ import importSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
 import prettier from "eslint-plugin-prettier";
+import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 
 export default tseslint.config(
     { ignores: ["dist"] },
@@ -20,6 +21,7 @@ export default tseslint.config(
         extends: [],
         files: ["src/**/*.{tsx,ts,mts,mjs,js,jsx}"],
         plugins: {
+            '@stylistic/jsx': stylisticJsx,
             "@stylistic": stylistic,
             importSort,
             unusedImports,
@@ -84,6 +86,7 @@ export default tseslint.config(
             "prefer-spread": "error",
 
             // Styling Rules
+            "@stylistic/jsx/jsx-indent": ['warn', 2],
             "@stylistic/spaced-comment": ["error", "always", { markers: ["!"] }],
             "@stylistic/no-extra-semi": "error",
             "@stylistic/jsx-quotes": ["error", "prefer-double"],
@@ -92,7 +95,7 @@ export default tseslint.config(
             "@stylistic/arrow-parens": ["error", "as-needed"],
             "@stylistic/eol-last": ["error", "always"],
             "@stylistic/no-multi-spaces": "error",
-            "@stylistic/no-trailing-spaces": "error",
+            "@stylistic/no-trailing-spaces": "warn",
             "@stylistic/no-whitespace-before-property": "error",
             "@stylistic/semi": ["error", "always"],
             "@stylistic/semi-style": ["error", "last"],
@@ -107,7 +110,7 @@ export default tseslint.config(
             "unusedImports/no-unused-imports": "error",
             "pathAlias/no-relative": "error",
             "prettier/prettier": [
-                "error",
+                "warn",
                 {
                     endOfLine: "auto"
                 }

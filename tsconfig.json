@@ -4,6 +4,7 @@
     "jsx": "react-jsx",
     "noImplicitAny": true,
     "sourceMap": true,
+    "esModuleInterop": true,
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
