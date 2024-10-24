@@ -16,6 +16,7 @@
         ]
     },
     "scripts": {
+        "dev": "pnpm build && pnpm start",
         "build": "tsc",
         "watch": "tsc -w",
         "lint": "eslint .",

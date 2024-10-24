@@ -9,7 +9,7 @@ function createWindow() {
         },
         width: 800
     });
-    mainWindow.loadFile(path.join("./index.html"));
+    mainWindow.loadFile(path.join("./src/render/MainWindow.html"));
 }
 
 app.whenReady().then(() => {

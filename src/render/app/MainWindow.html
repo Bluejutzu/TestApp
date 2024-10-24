@@ -5,6 +5,7 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
     <title>Hello World!</title>
   </head>
   <body>
@@ -12,6 +13,12 @@
 
     <p>Hit any key with this window focused to see it captured here.</p>
     <div><span>Last Key Pressed: </span><span id="last-keypress"></span></div>
+    <p>Mouse coordinates</p>
+    <div><span>ClientX: </span><span id="client-x"></span></div>
+    <div><span>ClientY: </span><span id="client-y"></span></div>
+    <div><span>AltKey?: </span><span id="client-alt"></span></div>
+    <div><span>CtrlKey?: </span><span id="client-ctrl"></span></div>
+    <div><span>ShiftKey?: </span><span id="client-shift"></span></div>
     <script src="./dist/renderer.js"></script>
   </body>
 </html>
