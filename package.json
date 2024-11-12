@@ -46,7 +46,7 @@
         "@electron-forge/publisher-github": "^7.5.0",
         "@electron/fuses": "^1.8.0",
         "@typescript-eslint/eslint-plugin": "^8.9.0",
-        "@typescript-eslint/parser": "^8.9.0",
+        "@typescript-eslint/parser": "^8.14.0",
         "electron": "^33.0.1",
         "electron-builder": "^25.1.8",
         "eslint": "^9.12.0",
