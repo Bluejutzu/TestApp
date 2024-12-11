@@ -53,7 +53,7 @@
         "typescript": "^5.6.0"
     },
     "dependencies": {
-        "@stylistic/eslint-plugin": "^2.9.0",
+        "@stylistic/eslint-plugin": "^2.12.1",
         "@typescript-eslint/scope-manager": "8.14.0",
         "electron-squirrel-startup": "^1.0.1",
         "env-cmd": "^10.1.0",
